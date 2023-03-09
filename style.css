@@ -12,6 +12,32 @@ body {
 	color: #333;
 	background: #a1c3ff;
 	display: flex;
-	flex-flow: column;
+	flex-flow: row;
 	min-height: 100vh;
+}
+.side {
+	position: relative;
+}
+.side img {
+	width: 35%;
+	z-index: 0;
+}
+.logo {
+	display: flex;
+	align-items: center;
+	background-color: #5e5a5a7e;
+	z-index: 1;
+	position: absolute;
+}
+.logo img {
+	min-width: 36px;
+	min-height: 36px;
+	max-width: 124px;
+	max-height: 124px;
+}
+.logo p {
+	font-family: Futura, Trebuchet MS, Arial, sans-serif;
+	font-size: 60px;
+	padding: 16px;
+	color: aliceblue;
 }
