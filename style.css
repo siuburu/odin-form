@@ -4,30 +4,34 @@
 	padding: 0;
 	margin: 0;
 }
-
+a {
+	text-decoration: none;
+}
 body {
 	font-family: "Poppins", sans-serif;
 	font-size: 16px;
 	line-height: 1.5;
 	color: #333;
-	background: #a1c3ff;
+	background: #f1f1f3;
 	display: flex;
 	flex-flow: row;
 	min-height: 100vh;
 }
 .side {
 	position: relative;
-}
-.side img {
+	background-image: url("img/vista-wei-kqw2gr5n2cc-unsplash.jpg");
+	background-size: cover;
 	width: 35%;
-	z-index: 0;
+	display: flex;
+	flex-direction: column;
 }
 .logo {
+	margin-top: 35%;
+	padding: 16px;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	background-color: #5e5a5a7e;
-	z-index: 1;
-	position: absolute;
 }
 .logo img {
 	min-width: 36px;
@@ -40,4 +44,25 @@ body {
 	font-size: 60px;
 	padding: 16px;
 	color: aliceblue;
+}
+
+.side-footer {
+	display: flex;
+	flex: 1;
+	justify-content: flex-end;
+	align-items: flex-end;
+	color: whitesmoke;
+}
+.side-footer p {
+	z-index: 1;
+	background-color: #3535358e;
+	border-radius: 8px;
+	padding: 5px;
+}
+
+.main-content {
+	margin-left: 48px;
+}
+
+.main-content .top {
 }
