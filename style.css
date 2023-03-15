@@ -4,9 +4,12 @@
 	padding: 0;
 	margin: 0;
 }
-a {
-	text-decoration: none;
+
+.side a,
+.side a:visited {
+	color: aliceblue;
 }
+
 body {
 	font-family: "Poppins", sans-serif;
 	font-size: 16px;
@@ -17,6 +20,7 @@ body {
 	flex-flow: row;
 	min-height: 100vh;
 }
+
 .side {
 	position: relative;
 	background-image: url("img/vista-wei-kqw2gr5n2cc-unsplash.jpg");
@@ -25,6 +29,7 @@ body {
 	display: flex;
 	flex-direction: column;
 }
+
 .logo {
 	margin-top: 35%;
 	padding: 16px;
@@ -33,12 +38,14 @@ body {
 	justify-content: center;
 	background-color: #5e5a5a7e;
 }
+
 .logo img {
 	min-width: 36px;
 	min-height: 36px;
 	max-width: 124px;
 	max-height: 124px;
 }
+
 .logo p {
 	font-family: Futura, Trebuchet MS, Arial, sans-serif;
 	font-size: 60px;
@@ -53,6 +60,7 @@ body {
 	align-items: flex-end;
 	color: whitesmoke;
 }
+
 .side-footer p {
 	z-index: 1;
 	background-color: #3535358e;
@@ -63,12 +71,15 @@ body {
 .main-content {
 	margin-left: 48px;
 }
+
 .main-content .mid {
 	background-color: white;
 }
+
 .main-content .mid h3 {
 	padding: 16px 0;
 }
+
 .main-content .top {
 }
 
@@ -76,26 +87,52 @@ body {
 	margin-top: 16px;
 	margin-bottom: 16px;
 	padding: 16px 48px;
+	font-weight: bolder;
+	font-size: large;
 	background-color: #eecad2;
 	border-radius: 8px;
 	border: 0;
-	color: #333;
+	color: #474747;
+	box-shadow: 5px 5px 5px #5250503b;
 }
-form {
+section {
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: column;
+}
+.bottom {
+	padding: 12px;
+}
+.bottom a,
+.bottom a:visited {
+	text-decoration: none;
+	color: #eea7ce;
+}
+.mid h3 {
+	margin-left: 12px;
 }
 .mid section p {
 	display: flex;
+	font-size: smaller;
+	font-weight: 500;
 }
+
 .form-field {
 	flex-direction: column;
 	flex-basis: 50%;
 	padding: 12px;
 }
+
 .form-field input {
 	width: 300px;
 	height: 36px;
-	border-radius: 4px;
+	border-radius: 3px;
+	border-color: #e5e7eb;
+}
+
+.form-field input:focus {
+	width: 300px;
+	height: 36px;
+	border-radius: 3px;
+	outline: #eea7ce solid;
+	box-shadow: 5px 5px 5px #33333352;
 }

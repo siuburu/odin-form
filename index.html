@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up form</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">-
 </head>
 
 <body>
@@ -35,41 +35,44 @@
                 <h3>Let's do this!</h3>
                 <section>
                     <p class="form-field">
-                        <label for="firstName">First Name</label>
-                        <input type="text" name="firstName" id="firstName">
+                        <label for="firstName">FIRST NAME</label>
+                        <input type="text" name="firstName" id="firstName" placeholder="João" required>
                     </p>
                     <p class="form-field">
-                        <label for="lastName">Last Name</label>
-                        <input type="text" name="lastName" id="lastName">
-                    </p>
-
-                    <p class="form-field">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email">
+                        <label for="lastName">LAST NAME</label>
+                        <input type="text" name="lastName" id="lastName" placeholder="Johnson" required>
                     </p>
 
                     <p class="form-field">
-                        <label for="phoneNumber">Phone Number</label>
-                        <input type="tel" name="phoneNumber" id="phoneNumber">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email" placeholder="joaojohnson@brutus.com" required>
                     </p>
 
                     <p class="form-field">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password">
+                        <label for="phoneNumber">PHONE NUMBER</label>
+                        <input type="tel" name="phoneNumber" id="phoneNumber"
+                            pattern="/^(1|)?(\d{0,2})?(\d{0,5})?(\d{0,4})?$/" placeholder="(55) 99999-9999"
+                            maxlength="14" pattern="" required>
+                    </p>
+
+                    <p class="form-field">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="password" id="password" class="error">
                     </p>
                     <p class="form-field">
 
-                        <label for="confirmPassword">Confirm Password</label>
-                        <input type="password" name="confirmPassword" id="confirmPassword">
+                        <label for="confirmPassword">CONFIRM PASSWORD</label>
+                        <input type="password" name="confirmPassword" id="confirmPassword" class="error">
                     </p>
                 </section>
                 <div class="bottom">
                     <input type="submit" value="Create Account" class="btn">
-                    <p>Already have and account? <a href="">Log in</a></p>
+                    <p>Already have an account? <a href=""><strong>Log in</strong></a></p>
                 </div>
             </form>
         </div>
     </div>
 </body>
+<script src="script.js"></script>
 
 </html>
