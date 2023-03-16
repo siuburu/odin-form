@@ -22,3 +22,21 @@ function autoFormatPhoneNumber(phoneNumberString) {
 		return "";
 	}
 }
+
+const password = document.getElementById("password");
+const confirmPassword = document.getElementById("confirmPassword");
+password.addEventListener(
+	"input",
+	checkpassword(password.value, confirmPassword.value)
+);
+confirmPassword.addEventListener(
+	"input",
+	checkpassword(password.value, confirmPassword.value)
+);
+function checkPassword(password, confirmPassword) {
+	if (password != confirmPassword) {
+		console.log("senhas n coincidem");
+	} else {
+		console.log("acerto");
+	}
+}

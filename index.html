@@ -50,9 +50,10 @@
 
                     <p class="form-field">
                         <label for="phoneNumber">PHONE NUMBER</label>
-                        <input type="tel" name="phoneNumber" id="phoneNumber"
+                        <input type="tel" name="phoneNumber"
+                            title="Insira um telefone válido no formato (55) 99999-9999" id="phoneNumber"
                             pattern="/^(1|)?(\d{0,2})?(\d{0,5})?(\d{0,4})?$/" placeholder="(55) 99999-9999"
-                            maxlength="14" pattern="" required>
+                            minlength="13" maxlength="14" pattern="" required>
                     </p>
 
                     <p class="form-field">

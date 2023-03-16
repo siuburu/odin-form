@@ -69,11 +69,15 @@ body {
 }
 
 .main-content {
-	margin-left: 48px;
+	width: 100vw;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .main-content .mid {
 	background-color: white;
+	padding-left: 36px;
 }
 
 .main-content .mid h3 {
@@ -81,6 +85,7 @@ body {
 }
 
 .main-content .top {
+	padding-left: 36px;
 }
 
 .btn {
@@ -100,15 +105,12 @@ section {
 	flex-wrap: wrap;
 }
 .bottom {
-	padding: 12px;
+	padding-top: 24px;
 }
 .bottom a,
 .bottom a:visited {
 	text-decoration: none;
 	color: #eea7ce;
-}
-.mid h3 {
-	margin-left: 12px;
 }
 .mid section p {
 	display: flex;
@@ -119,7 +121,6 @@ section {
 .form-field {
 	flex-direction: column;
 	flex-basis: 50%;
-	padding: 12px;
 }
 
 .form-field input {
