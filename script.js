@@ -25,18 +25,15 @@ function autoFormatPhoneNumber(phoneNumberString) {
 
 const password = document.getElementById("password");
 const confirmPassword = document.getElementById("confirmPassword");
-password.addEventListener(
-	"input",
-	checkpassword(password.value, confirmPassword.value)
-);
-confirmPassword.addEventListener(
-	"input",
-	checkpassword(password.value, confirmPassword.value)
-);
-function checkPassword(password, confirmPassword) {
-	if (password != confirmPassword) {
-		console.log("senhas n coincidem");
+const feedback = document.getElementById("confirmPassword-feedback");
+let isPasswordMatch = false;
+
+confirmPassword.addEventListener("input", () => {
+	if (password.value != confirmPassword.value) {
+		feedback.innerHTML = "Passwords did not match";
+		isPasswordMatch = false;
 	} else {
-		console.log("acerto");
+		feedback.innerHTML = "";
+		isPasswordMatch = true;
 	}
-}
+});
