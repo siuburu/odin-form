@@ -137,7 +137,9 @@ section {
 	outline: #eea7ce solid;
 	box-shadow: 5px 5px 5px #33333352;
 }
-
+.error {
+	outline: red solid;
+}
 #confirmPassword-feedback {
 	color: rgba(255, 16, 16, 0.877);
 }
