@@ -30,7 +30,7 @@ let isPasswordMatch = false;
 
 confirmPassword.addEventListener("input", () => {
 	if (password.value != confirmPassword.value) {
-		feedback.innerHTML = "Passwords did not match";
+		feedback.innerHTML = "* Passwords do not match";
 		isPasswordMatch = false;
 		password.classList.add("error");
 		confirmPassword.classList.add("error");
